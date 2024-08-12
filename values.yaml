@@ -79,7 +79,8 @@ autoscaling:
 
 configmap:
   name: "celery"
-  data: {}
+  data:
+    CELERY_BROKER_URL: ""
 
 # Additional volumes on the output Deployment definition.
 volumes: []
